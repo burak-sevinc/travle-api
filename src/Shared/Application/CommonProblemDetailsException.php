@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Crackcode\Shared\Application;
+namespace Travle\Shared\Application;
 
 use function array_merge;
 use function count;

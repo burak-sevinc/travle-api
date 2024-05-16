@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Crackcode\Infrastructure\UseCase\PublicApi;
+namespace Travle\Infrastructure\UseCase\PublicApi;
 
 use function dirname;
 use function file_exists;

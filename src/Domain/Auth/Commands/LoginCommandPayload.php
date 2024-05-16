@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Crackcode\Domain\Auth\Commands;
+namespace Travle\Domain\Auth\Commands;
 
-use Crackcode\Shared\Utils\AuthConfig;
-use Crackcode\Shared\Utils\JsonResponse;
+use Travle\Shared\Utils\AuthConfig;
+use Travle\Shared\Utils\JsonResponse;
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;

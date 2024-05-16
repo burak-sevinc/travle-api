@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Crackcode\Shared\Adapters\Persistence\Eloquent\Models\User;
+use Travle\Shared\Adapters\Persistence\Eloquent\Models\User;
 
 return [
 

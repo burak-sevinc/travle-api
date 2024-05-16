@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Crackcode\Domain\Auth\Adapters\Persistence\Eloquent;
+namespace Travle\Domain\Auth\Adapters\Persistence\Eloquent;
 
-use Crackcode\Domain\Auth\Entity\User as UserEntity;
-use Crackcode\Domain\Auth\Exception\RegisterFailed;
-use Crackcode\Domain\Auth\Repository;
-use Crackcode\Domain\Auth\ValueObjects\Token;
-use Crackcode\Shared\Adapters\Persistence\Eloquent\Models\User;
+use Travle\Domain\Auth\Entity\User as UserEntity;
+use Travle\Domain\Auth\Exception\RegisterFailed;
+use Travle\Domain\Auth\Repository;
+use Travle\Domain\Auth\ValueObjects\Token;
+use Travle\Shared\Adapters\Persistence\Eloquent\Models\User;
 use Throwable;
 
 use function password_verify;

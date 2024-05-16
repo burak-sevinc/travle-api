@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Crackcode Public API</title>
+    <title>Travle Public API</title>
     <script src="https://unpkg.com/@stoplight/elements/web-components.min.js?v=<?= date('Ymdhis') ?>"></script>
     <link rel="stylesheet" href="https://unpkg.com/@stoplight/elements/styles.min.css?v=<?= date('Ymdhis') ?>">
     <style>

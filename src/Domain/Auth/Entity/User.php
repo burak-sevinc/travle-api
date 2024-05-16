@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Crackcode\Domain\Auth\Entity;
+namespace Travle\Domain\Auth\Entity;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 

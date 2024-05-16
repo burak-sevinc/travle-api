@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Crackcode\Shared\ValueObjects;
+namespace Travle\Shared\ValueObjects;
 
-use Crackcode\Shared\Base\BaseIntegerId;
+use Travle\Shared\Base\BaseIntegerId;
 
 class UserIntegerId extends BaseIntegerId
 {

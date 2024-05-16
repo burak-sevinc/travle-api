@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Crackcode\Infrastructure\UseCase\PublicApi\Auth\Controllers;
+namespace Travle\Infrastructure\UseCase\PublicApi\Auth\Controllers;
 
 use App\Http\Controllers\Controller;
-use Crackcode\Domain\Auth\AuthService;
-use Crackcode\Domain\Auth\Commands\RegisterCommandPayload;
-use Crackcode\Shared\Utils\JsonResponse;
+use Travle\Domain\Auth\AuthService;
+use Travle\Domain\Auth\Commands\RegisterCommandPayload;
+use Travle\Shared\Utils\JsonResponse;
 
 class Register extends Controller
 {

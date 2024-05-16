@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Crackcode\Shared\Utils;
+namespace Travle\Shared\Utils;
 
 use Illuminate\Support\Facades\Config;
 
@@ -14,7 +14,7 @@ class AuthConfig
         private int|null $emailMin = null,
         private int|null $emailMax = null,
     ) {
-        $authConfig = Config::get('crackcode.auth');
+        $authConfig = Config::get('travle.auth');
 
         $passwordMin = $authConfig['auth']['password']['min'];
         $passwordMax = $authConfig['auth']['password']['max'];

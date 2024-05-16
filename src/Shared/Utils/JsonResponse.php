@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Crackcode\Shared\Utils;
+namespace Travle\Shared\Utils;
 
 use Illuminate\Contracts\Support\Responsable;
 use Symfony\Component\HttpFoundation\JsonResponse as JsonResponseHttp;

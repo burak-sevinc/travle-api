@@ -67,7 +67,7 @@ class DomainServiceProvider extends ServiceProvider
 
         $services = [];
         foreach ($files as $file) {
-            $className = str_replace([$rootDir . '/src/', '.php', '/'], ['Crackcode\\', '', '\\'], $file);
+            $className = str_replace([$rootDir . '/src/', '.php', '/'], ['Travle\\', '', '\\'], $file);
             if (! class_exists($className)) {
                 continue;
             }

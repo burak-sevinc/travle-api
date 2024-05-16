@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Crackcode\Shared\Adapters\Persistence\Eloquent\Models;
+namespace Travle\Shared\Adapters\Persistence\Eloquent\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Crackcode\Shared\Traits\Uuid;
+use Travle\Shared\Traits\Uuid;
 use Database\Factories\UserFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;

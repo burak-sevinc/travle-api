@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Database\Factories;
 
-use Crackcode\Shared\Adapters\Persistence\Eloquent\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
+use Travle\Shared\Adapters\Persistence\Eloquent\Models\User;
 
 use function fake;
 use function now;

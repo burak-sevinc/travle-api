@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Crackcode\Shared\Traits;
+namespace Travle\Shared\Traits;
 
 use Closure;
 use Illuminate\Support\Str;

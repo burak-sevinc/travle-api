@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Crackcode\Shared\Exception;
+namespace Travle\Shared\Exception;
 
-use Crackcode\Shared\Application\CommonProblemDetailsException;
+use Travle\Shared\Application\CommonProblemDetailsException;
 use DomainException as PhpDomainException;
 
 /** @phpstan-consistent-constructor */

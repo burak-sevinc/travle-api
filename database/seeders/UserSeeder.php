@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Database\Seeders;
 
-use Crackcode\Shared\Adapters\Persistence\Eloquent\Models\User;
+use Travle\Shared\Adapters\Persistence\Eloquent\Models\User;
 use Illuminate\Database\Seeder;
 
 use function bcrypt;

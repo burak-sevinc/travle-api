@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Crackcode\Domain\Auth\ValueObjects;
+namespace Travle\Domain\Auth\ValueObjects;
 
 class Token
 {

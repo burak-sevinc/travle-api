@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Crackcode\Shared\Exception;
+namespace Travle\Shared\Exception;
 
-use Crackcode\Shared\Utils\JsonResponse;
+use Travle\Shared\Utils\JsonResponse;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;

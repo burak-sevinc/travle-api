@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Crackcode\Domain\Auth;
+namespace Travle\Domain\Auth;
 
 interface Repository
 {

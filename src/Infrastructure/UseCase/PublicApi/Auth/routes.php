@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Crackcode\Infrastructure\UseCase\PublicApi\Auth;
+namespace Travle\Infrastructure\UseCase\PublicApi\Auth;
 
-use Crackcode\Infrastructure\UseCase\PublicApi\Auth\Controllers\Login;
-use Crackcode\Infrastructure\UseCase\PublicApi\Auth\Controllers\Register;
 use Illuminate\Support\Facades\Route;
+use Travle\Infrastructure\UseCase\PublicApi\Auth\Controllers\Login;
+use Travle\Infrastructure\UseCase\PublicApi\Auth\Controllers\Register;
 
 /**
  * Auth routes

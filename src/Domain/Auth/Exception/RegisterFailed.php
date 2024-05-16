@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Crackcode\Domain\Auth\Exception;
+namespace Travle\Domain\Auth\Exception;
 
-use Crackcode\Shared\Exception\DomainException;
+use Travle\Shared\Exception\DomainException;
 
 class RegisterFailed extends DomainException
 {

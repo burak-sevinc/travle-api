@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Crackcode\Shared\Base;
+namespace Travle\Shared\Base;
 
 use Ramsey\Uuid\Uuid;
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Crackcode\Shared\Exception;
+namespace Travle\Shared\Exception;
 
 use JsonSerializable;
 use Throwable;
