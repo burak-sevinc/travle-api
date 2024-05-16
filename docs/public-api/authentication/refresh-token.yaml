@@ -1,0 +1,17 @@
+post:
+  tags:
+    - Auth
+  summary: Refresh token
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: './components.yaml#/components/schemas/RefreshTokenRequest'
+  responses:
+    200:
+      $ref: './components.yaml#/components/responses/RefreshTokenResponse'
+    400:
+      $ref: '../components.yaml#/components/responses/400'
+    422:
+      $ref: '../components.yaml#/components/responses/422'

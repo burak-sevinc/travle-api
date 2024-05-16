@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace Database\Seeders;
 
-use Travle\Shared\Adapters\Persistence\Eloquent\Models\User;
 use Illuminate\Database\Seeder;
-
-use function bcrypt;
+use Travle\Shared\Adapters\Persistence\Eloquent\Models\User;
 
 class UserSeeder extends Seeder
 {
@@ -16,17 +14,8 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        User::create([
-            'name' => 'admin',
-            'email' => 'admin@admin.com',
-            'password' => bcrypt('Password123'),
-        ]);
-
-        User::create([
-            'name' => 'admin1',
-            'email' => 'admin1@admin.com',
-            'password' => bcrypt('Password123'),
-        ]);
+        User::create(['email' => 'admin@admin.com']);
+        User::create(['email' => 'admin1@admin.com']);
 
         User::newFactory()->count(10)->create();
     }

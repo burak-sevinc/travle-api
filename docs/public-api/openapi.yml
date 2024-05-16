@@ -24,3 +24,7 @@ paths:
     $ref: './authentication/login.yaml'
   /auth/register:
     $ref: './authentication/register.yaml'
+  /auth/token:
+    $ref: './authentication/create-token.yaml'
+  /auth/refresh-token:
+    $ref: './authentication/refresh-token.yaml'

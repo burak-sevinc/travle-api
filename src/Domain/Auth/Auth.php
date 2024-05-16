@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Travle\Domain\Auth;
 
-use function explode;
-
 readonly class Auth implements AuthService
 {
     public function __construct(
@@ -14,29 +12,54 @@ readonly class Auth implements AuthService
     }
 
     /**
-     * Register a new user
+     * Callback from the Clerk API
      *
      * @param array<string, mixed> $data
-     *
-     * @return array<string, mixed>
      */
-    public function register(array $data): array
+    public function callback(array $data): void
     {
-        $name         = explode('@', $data['email'])[0];
-        $data['name'] = $name;
-
-        return $this->repository->register($data);
+        $this->repository->callback($data);
     }
 
-    /**
-     * Login a user
-     *
-     * @param array<string, mixed> $data
-     *
-     * @return array<string, mixed>
-     */
-    public function login(array $data): array
+    /** @return array<string, mixed> */
+    public function getUserById(int $id): array
     {
-        return $this->repository->login($data);
+        return $this->repository->getUserById($id);
+    }
+
+    /** @return array<string, mixed> */
+    public function getUserByEmail(string $email): array
+    {
+        return $this->repository->getUserByEmail($email);
+    }
+
+    /** @return array<string, mixed> */
+    public function getUserByToken(string $token): array
+    {
+        return $this->repository->getUserByToken($token);
+    }
+
+    /** @return array<string, mixed> */
+    public function getUserByRefreshToken(string $refreshToken): array
+    {
+        return $this->repository->getUserByRefreshToken($refreshToken);
+    }
+
+    /** @return array<string, mixed> */
+    public function getUserByUuid(string $uuid): array
+    {
+        return $this->repository->getUserByUuid($uuid);
+    }
+
+    /** @return array<string, mixed> */
+    public function createToken(string $uuid, string $email): array
+    {
+        return $this->repository->createToken($uuid, $email);
+    }
+
+    /** @return array<string, mixed> */
+    public function createTokenByRefreshToken(string $refreshToken): array
+    {
+        return $this->repository->createTokenByRefreshToken($refreshToken);
     }
 }

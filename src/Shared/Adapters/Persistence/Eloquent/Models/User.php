@@ -4,21 +4,24 @@ declare(strict_types=1);
 
 namespace Travle\Shared\Adapters\Persistence\Eloquent\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Travle\Shared\Traits\Uuid;
 use Database\Factories\UserFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+// use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Travle\Shared\Traits\Uuid;
 
 /**
  * @property string $uuid
- * @property string $name
  * @property string $email
- * @property string $password
  * @property string $remember_token
  * @property string $email_verified_at
+ * @property mixed $meta
+ * @property string $created_at
+ * @property string $updated_at
+ * @property string $deleted_at
  * @method static User first()
  * @method static User create(array $data)
  * @method static User find(int $id)
@@ -30,7 +33,7 @@ class User extends Authenticatable
     use HasFactory;
     use HasApiTokens;
     use Notifiable;
-    use Uuid;
+    use SoftDeletes;
 
     public static function newFactory(): UserFactory
     {
