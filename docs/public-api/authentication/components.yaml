@@ -1,0 +1,30 @@
+components:
+  schemas:
+    LoginRequest:
+      type: object
+      properties:
+        email:
+          type: string
+          description: The user's email
+          example: "admin@admin.com"
+        password:
+          type: string
+          description: The user's password
+          example: "Password123"
+  responses:
+    LoginResponse:
+    description: Bad Request
+    content:
+      application/json:
+        schema:
+          allOf:
+            - $ref: '../components.yaml#/components/schemas/DefaultResponseParams'
+            - type: object
+              properties:
+                data:
+                  type: object
+                  properties:
+                    user:
+                      $ref: '../components.yaml#/components/schemas/User'
+                    auth:
+                      $ref: '../components.yaml#/components/schemas/Token'
