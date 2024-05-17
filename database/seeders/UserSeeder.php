@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Ramsey\Uuid\Uuid;
 use Travle\Shared\Adapters\Persistence\Eloquent\Models\User;
 use Travle\Shared\ValueObjects\UserId;
 
@@ -16,7 +17,7 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         User::create([
-            'uuid' => UserId::generate(),
+            'uuid' => Uuid::uuid4(),
             'email' => 'admin@admin.com',
         ]);
 
