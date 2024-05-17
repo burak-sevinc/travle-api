@@ -1,0 +1,127 @@
+components:
+  schemas:
+    DefaultResponseParams:
+      type: object
+      properties:
+        status:
+          type: string
+          description: The status of the response
+          example: success
+        message:
+          type: string
+          description: The message of the response
+          example: Request successful
+    Token:
+      type: object
+      properties:
+        type:
+          type: string
+          description: The type of the token
+          example: Bearer
+        token:
+          type: string
+          description: The JWT token
+    User:
+      type: object
+      properties:
+        uuid:
+          type: string
+          description: The user's UUID
+          example: 123e4567-e89b-12d3-a456-426614174000
+        name:
+          type: string
+          description: The user's name
+          example: John Doe
+        email:
+          type: string
+          description: The user's email
+          example: example@hello.com
+
+    400:
+      type: object
+      properties:
+        message:
+          type: string
+          description: The error message
+          example: Bad Request
+    401:
+      type: object
+      properties:
+        message:
+          type: string
+          description: The error message
+          example: Unauthorized
+    404:
+      type: object
+      properties:
+        message:
+          type: string
+          description: The error message
+          example: Not Found
+    422:
+      type: object
+      properties:
+        status:
+          type: string
+          description: The error status
+          example: 422
+        data:
+          type: object
+          properties:
+            message:
+              type: string
+              description: The error message
+              example: Unprocessable Entity
+            errors:
+              type: array
+              items:
+                type: object
+                properties:
+                  field:
+                    type: string
+                    description: The field that caused the error
+                    example: email
+                  message:
+                    type: array
+                    items:
+                      type: string
+        message:
+          type: string
+          description: The error message
+          example: Unprocessable Entity
+
+  responses:
+    400:
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            $ref: './components.yaml#/components/schemas/400'
+    401:
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            $ref: './components.yaml#/components/schemas/401'
+    404:
+      description: Not Found
+      content:
+        application/json:
+          schema:
+            $ref: './components.yaml#/components/schemas/404'
+    422:
+      description: Unprocessable Entity
+      content:
+        application/json:
+          schema:
+            $ref: './components.yaml#/components/schemas/422'
+
+  parameters:
+    userId:
+      name: userId
+      in: path
+      required: true
+      description: The ID of the user
+      schema:
+        type: string
+        example: 123e4567-e89b-12d3-a456-426614174000

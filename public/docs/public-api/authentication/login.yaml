@@ -1,0 +1,17 @@
+post:
+  tags:
+    - Auth
+  summary: Login
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: './components.yaml#/components/schemas/LoginRequest'
+  responses:
+    200:
+      $ref: './components.yaml#/components/responses/LoginResponse'
+    400:
+      $ref: '../components.yaml#/components/responses/400'
+    422:
+      $ref: '../components.yaml#/components/responses/422'
