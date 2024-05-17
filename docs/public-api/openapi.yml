@@ -22,10 +22,6 @@ components:
       description: JWT Authorization header using the Bearer scheme.
 
 paths:
-  /auth/login:
-    $ref: './authentication/login.yaml'
-  /auth/register:
-    $ref: './authentication/register.yaml'
   /auth/token:
     $ref: './authentication/create-token.yaml'
   /auth/refresh-token:
